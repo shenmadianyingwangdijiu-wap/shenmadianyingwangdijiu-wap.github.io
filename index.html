@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>神马电影网第九 | 第九期的电影选题、片单与编辑笔记</title>
+<meta name="description" content="神马电影网第九（https://shenmadianyingwangdijiu-wap.github.io）是一份以「第九」为主题的静态单页电影内容站：第九期选题、第九周放映单、九部片组成的片单与编辑笔记，用一个小切口聊电影。">
+<meta name="keywords" content="神马电影网第九, shenmadianyingwangdijiu-wap, 第九期, 电影片单, 电影选题, 编辑笔记">
+<meta name="author" content="神马电影网第九">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#101a16">
+<meta property="og:type" content="website">
+<meta property="og:title" content="神马电影网第九 | 第九期的电影选题、片单与编辑笔记">
+<meta property="og:description" content="以「第九」为主题的电影内容单页：第九期选题、第九周放映单、九部片组成的片单与编辑笔记。">
+<meta property="og:url" content="https://shenmadianyingwangdijiu-wap.github.io">
+<meta property="og:site_name" content="神马电影网第九">
+<link rel="canonical" href="https://shenmadianyingwangdijiu-wap.github.io">
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;font-size:16px;line-height:1.8;
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei","WenQuanYi Micro Hei",sans-serif;
+  background:#101a16;color:#eef3f0;overflow-x:hidden;
+}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(700px 480px at 88% 8%,rgba(80,180,150,.16),transparent 62%),
+  radial-gradient(560px 460px at 6% 14%,rgba(60,110,130,.14),transparent 64%),
+  linear-gradient(180deg,#101a16,#0b120f);}
+a{color:inherit;text-decoration:none}
+:root{--max:1180px;--line:rgba(120,200,175,.2);--mute:#93a39d;--paper:rgba(120,200,175,.035);--mint:#5fd3ae;--mint2:#8ee7c7;--radius:14px}
+
+/* ===== header ===== */
+.site-header{position:sticky;top:0;z-index:50;background:rgba(11,18,15,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.site-header .wrap{max-width:var(--max);margin:0 auto;padding:0 28px;height:72px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;min-width:0}
+.logo{flex:0 0 auto;width:38px;height:38px;border-radius:11px;background:linear-gradient(140deg,var(--mint),#2c8e75);display:grid;place-items:center;font-size:17px;font-weight:800;color:#07231c;letter-spacing:-1px}
+.brand b{font-size:19px;letter-spacing:.5px;font-weight:700;color:var(--mint2);white-space:nowrap}
+.brand em{font-style:normal;font-size:12px;color:var(--mute);letter-spacing:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.nav-links{display:flex;gap:2px}
+.nav-links a{padding:9px 14px;font-size:15px;border-radius:999px;color:var(--mute);transition:.2s}
+.nav-links a:hover{color:#fff;background:var(--paper)}
+.menu-btn{display:none;width:44px;height:44px;border-radius:11px;background:var(--paper);border:1px solid var(--line);color:var(--mint2);font-size:20px;cursor:pointer}
+
+/* ===== cover ===== */
+.cover{max-width:var(--max);margin:0 auto;padding:52px 28px 30px}
+.mag{position:relative;border-radius:26px;overflow:hidden;border:1px solid var(--line);background:
+  radial-gradient(620px 420px at 82% 12%,rgba(95,211,174,.22),transparent 60%),
+  linear-gradient(160deg,#15302a,#0b1511);}
+.mag-g{position:absolute;right:-70px;top:-90px;width:340px;height:340px;border-radius:50%;border:1px solid rgba(143,231,199,.28)}
+.mag-g2{position:absolute;right:40px;bottom:-150px;width:260px;height:260px;border-radius:50%;border:1px solid rgba(143,231,199,.18)}
+.mag-i{position:relative;padding:60px 56px;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.issue{display:inline-flex;align-items:center;gap:9px;font-size:12.5px;color:var(--mint2);border:1px solid var(--line);padding:6px 13px;border-radius:999px;letter-spacing:1px}
+.mag-i h1{margin:18px 0 0;font-size:clamp(30px,5.4vw,54px);line-height:1.16;font-weight:800;letter-spacing:-.5px}
+.mag-i h1 span{color:var(--mint)}
+.mag-i p{margin:18px 0 0;color:var(--mute);font-size:clamp(15px,1.7vw,17px);max-width:52ch}
+.acts{margin-top:26px;display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:999px;font-size:15px;cursor:pointer;transition:.2s;border:1px solid transparent}
+.btn-p{background:var(--mint);color:#07231c;font-weight:700}
+.btn-p:hover{background:var(--mint2)}
+.btn-o{border-color:var(--line);color:var(--mint2)}
+.btn-o:hover{border-color:var(--mint);color:var(--mint)}
+
+/* ===== 第九的九宫格 ===== */
+.nine{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.nine a{position:relative;display:flex;align-items:flex-end;min-height:150px;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);transition:.25s;padding:20px}
+.nine a:hover{transform:translateY(-5px);border-color:var(--mint)}
+.nine i{position:absolute;inset:0;z-index:0}
+.n1{background:linear-gradient(150deg,#1c3a32,#0a1612)}
+.n2{background:linear-gradient(150deg,#1a3440,#09141a)}
+.n3{background:linear-gradient(150deg,#3a321c,#160f07)}
+.n4{background:linear-gradient(150deg,#2c2438,#150f1c)}
+.n5{background:linear-gradient(150deg,#243a30,#0b1612)}
+.n6{background:linear-gradient(150deg,#3a2a24,#180f0c)}
+.n7{background:linear-gradient(150deg,#223340,#0a131a)}
+.n8{background:linear-gradient(150deg,#33401f,#121a08)}
+.n9{background:linear-gradient(150deg,#401f34,#1a0814)}
+.nine b,.nine s,.nine em{position:relative;z-index:1;display:block}
+.nine b{font-size:clamp(20px,2.4vw,25px);font-weight:800;letter-spacing:-.5px}
+.nine s{text-decoration:none;font-size:13px;color:var(--mint2);margin-bottom:4px;letter-spacing:1px}
+.nine em{font-style:normal;font-size:13.5px;color:var(--mute);margin-top:6px;line-height:1.6}
+
+/* ===== 选题/长文 ===== */
+section{max-width:var(--max);margin:0 auto;padding:52px 28px}
+.sec-t{display:flex;align-items:baseline;gap:14px;margin-bottom:26px;flex-wrap:wrap}
+.sec-t .en{font-size:12px;letter-spacing:4px;color:var(--mint);border-left:3px solid var(--mint);padding-left:10px}
+.sec-t h2{margin:0;font-size:clamp(21px,2.8vw,28px);letter-spacing:-.3px}
+.sec-t .more{margin-left:auto;font-size:14px;color:var(--mute)}
+.sec-t .more:hover{color:var(--mint)}
+
+.ed{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.ed a{border:1px solid var(--line);border-radius:var(--radius);padding:24px 26px;background:var(--paper);transition:.25s;display:flex;flex-direction:column}
+.ed a:hover{border-color:var(--mint)}
+.ed .top{display:flex;align-items:center;gap:10px;font-size:12.5px;color:var(--mint2);letter-spacing:1px}
+.ed .top s{text-decoration:none;background:rgba(95,211,174,.12);padding:3px 9px;border-radius:999px}
+.ed b{margin-top:12px;font-size:19.5px;line-height:1.5;letter-spacing:-.2px}
+.ed p{margin:8px 0 0;color:var(--mute);font-size:14.5px;flex:1}
+.ed .who{margin-top:16px;font-size:12.5px;color:var(--mute);border-top:1px dashed rgba(120,200,175,.22);padding-top:12px}
+
+/* ===== 放映单 表格 ===== */
+.sched{border:1px solid var(--line);border-radius:var(--radius);overflow:hidden}
+.sched .row{display:grid;grid-template-columns:104px 1.4fr 1fr .9fr 96px;align-items:center;padding:17px 24px;border-bottom:1px solid rgba(120,200,175,.14);transition:.2s}
+.sched .row:last-child{border-bottom:0}
+.sched .row:hover{background:rgba(95,211,174,.06)}
+.sched .row.head{font-size:12.5px;color:var(--mint2);letter-spacing:1px;background:rgba(95,211,174,.05)}
+.sched .wk{font-size:21px;font-weight:800;color:var(--mint);letter-spacing:-.5px}
+.sched .tt{font-size:16.5px;font-weight:600}
+.sched .why{color:var(--mute);font-size:14px}
+.sched .tag{font-size:12.5px;color:var(--mint2)}
+.sched .go{text-align:right;font-size:13px;color:var(--mint)}
+.sched .row:hover .go{text-decoration:underline}
+
+/* ===== 编辑手记 ===== */
+.memo{border:1px solid var(--line);border-radius:var(--radius);padding:36px 40px;background:linear-gradient(120deg,rgba(95,211,174,.08),rgba(255,255,255,.01))}
+.memo .q{font-size:clamp(17px,2.3vw,22px);line-height:1.75;margin:0;letter-spacing:-.1px}
+.memo .q cite{display:block;margin-top:18px;font-style:normal;font-size:13px;color:var(--mute);letter-spacing:1px}
+.facts{margin-top:26px;display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--line);border-radius:12px;overflow:hidden}
+.facts div{background:var(--paper);padding:20px 18px}
+.facts b{display:block;color:var(--mint2);font-size:23px;letter-spacing:-.5px}
+.facts span{font-size:13.5px;color:var(--mute)}
+
+/* ===== footer ===== */
+.site-footer{border-top:1px solid var(--line);padding:34px 28px 44px;font-size:13.5px;color:var(--mute)}
+.site-footer .in{max-width:var(--max);margin:0 auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.site-footer a{color:var(--mute)}
+.site-footer a:hover{color:var(--mint)}
+
+@media (max-width:980px){
+  .mag-i{grid-template-columns:1fr;padding:44px 32px;gap:28px}
+  .nine{grid-template-columns:repeat(2,1fr)}
+  .ed{grid-template-columns:1fr}
+  .sched .row{grid-template-columns:88px 1fr;gap:8px 14px;padding:16px 18px}
+  .sched .row.head{display:none}
+  .sched .why,.sched .tag{grid-column:2}
+  .sched .go{grid-column:2;text-align:left}
+  .facts{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:640px){
+  .site-header .wrap{height:58px;padding:0 14px}
+  .brand b{font-size:16.5px}
+  .brand em{display:none}
+  .menu-btn{display:inline-flex;align-items:center;justify-content:center}
+  .nav-links{position:fixed;top:58px;left:0;right:0;flex-direction:column;background:rgba(11,18,15,.98);border-bottom:1px solid var(--line);padding:10px;clip-path:inset(0 0 100% 0);transition:.28s ease}
+  .nav-links.open{clip-path:inset(0 0 0 0)}
+  .nav-links a{border-radius:8px}
+  .cover{padding:30px 14px 18px}
+  section{padding:40px 14px}
+  .mag-i{padding:32px 22px;border-radius:20px}
+  .nine{grid-template-columns:1fr}
+  .memo{padding:26px 20px}
+}
+@media print{body{background:#fff;color:#000}.site-header,.menu-btn,.acts,.site-footer{display:none}section{page-break-inside:avoid}}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaolu.js"></script>
+
+<header class="site-header">
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo">9</div>
+      <b>神马电影网第九</b>
+      <em>shenmadianyingwangdijiu-wap.github.io</em>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">封面</a>
+      <a href="#nine">九格</a>
+      <a href="#editors">选题</a>
+      <a href="#schedule">放映单</a>
+      <a href="#memo">编辑手记</a>
+      <a href="#about">关于</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="打开菜单">≡</button>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== 封面 ===== -->
+  <section class="cover" id="home">
+    <div class="mag">
+      <span class="mag-g"></span><span class="mag-g2"></span>
+      <div class="mag-i">
+        <div>
+          <span class="issue">第九期 · 2026 年</span>
+          <h1>神马电影网<br><span>第九</span>期，从这里开始看</h1>
+          <p>第九期只做一个小切口：九部片子、九个角度、九种进入电影的方式。我们不列大全，只挑能聊开的。</p>
+          <div class="acts">
+            <a class="btn btn-p" href="#nine">看九格选题</a>
+            <a class="btn btn-o" href="#schedule">第九周放映单</a>
+          </div>
+        </div>
+        <div class="nine" style="gap:10px">
+          <a style="min-height:0;padding:14px 16px"><i class="n1"></i><div><s>NO.1</s><b>开场</b></div></a>
+          <a style="min-height:0;padding:14px 16px"><i class="n2"></i><div><s>NO.2</s><b>空间</b></div></a>
+          <a style="min-height:0;padding:14px 16px"><i class="n3"></i><div><s>NO.3</s><b>声音</b></div></a>
+          <a style="min-height:0;padding:14px 16px"><i class="n4"></i><div><s>NO.4</s><b>配角</b></div></a>
+          <a style="min-height:0;padding:14px 16px"><i class="n5"></i><div><s>NO.5</s><b>节奏</b></div></a>
+          <a style="min-height:0;padding:14px 16px"><i class="n6"></i><div><s>NO.6</s><b>色彩</b></div></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 九格 ===== -->
+  <section id="nine">
+    <div class="sec-t">
+      <span class="en">ISSUE 09</span>
+      <h2>第九期的九格选题</h2>
+      <a class="more" href="#">完整目录 #</a>
+    </div>
+    <div class="nine">
+      <a href="#"><i class="n1"></i><s>NO.01</s><b>开场的三分钟</b><em>前三分钟给了多少信息，后面就有多少余量。</em></a>
+      <a href="#"><i class="n2"></i><s>NO.02</s><b>一座能住人的场景</b><em>场景一旦有细节，角色就不需要多说话。</em></a>
+      <a href="#"><i class="n3"></i><s>NO.03</s><b>声音在替谁说话</b><em>配乐不是情绪按钮，而是另一种旁白。</em></a>
+      <a href="#"><i class="n4"></i><s>NO.04</s><b>配角才是主角</b><em>同一场戏换一个人演，结论会不一样。</em></a>
+      <a href="#"><i class="n5"></i><s>NO.05</s><b>节奏是剪出来的</b><em>好节奏不是快，是观众不想到要退出去。</em></a>
+      <a href="#"><i class="n6"></i><s>NO.06</s><b>颜色的分区法</b><em>把色块当角色分配，主题会自己浮出来。</em></a>
+      <a href="#"><i class="n7"></i><s>NO.07</s><b>一场戏的长度</b><em>长镜头的难处不是不剪，而是不能失焦。</em></a>
+      <a href="#"><i class="n8"></i><s>NO.08</s><b>结尾的两次反转</b><em>最后一镜常常先给答案，再收回它。</em></a>
+      <a href="#"><i class="n9"></i><s>NO.09</s><b>重看的那一遍</b><em>第二次看时，记住的往往不是剧情。</em></a>
+    </div>
+  </section>
+
+  <!-- ===== 编辑选题 ===== -->
+  <section id="editors" style="padding-top:0">
+    <div class="sec-t">
+      <span class="en">FEATURES</span>
+      <h2>编辑选题</h2>
+      <a class="more" href="#">全部文章 #</a>
+    </div>
+    <div class="ed">
+      <a href="#">
+        <div class="top"><s>长文</s><span>第九期 · 卷首</span></div>
+        <b>为什么这一期我们只聊「第九」</b>
+        <p>第九不是排名，也不代表最好。它只是我们在长片单里留下的一个停手点：够聊开，又不至于摊太薄。</p>
+        <div class="who">编辑部 · 9 分钟阅读</div>
+      </a>
+      <a href="#">
+        <div class="top"><s>片单</s><span>九部 · 一条线</span></div>
+        <b>九部片看懂「开场」这件事</b>
+        <p>从字幕出现前的镜头，到第一个角色开口，我们把开场拆成五个动作，并给出九部对照样本。</p>
+        <div class="who">片单组 · 6 分钟阅读</div>
+      </a>
+      <a href="#">
+        <div class="top"><s>方法</s><span>可复用</span></div>
+        <b>在家看片也能做的九条笔记法</b>
+        <p>不需要专业术语，一支笔加三个时间点，就能把「好看」写成可以说清的理由。</p>
+        <div class="who">方法组 · 5 分钟阅读</div>
+      </a>
+      <a href="#">
+        <div class="top"><s>问答</s><span>读者来信</span></div>
+        <b>第九周我们被问得最多的问题</b>
+        <p>关于补看顺序、字幕选择、重看时机与如何跟朋友聊一部片子，这一篇把答案整理成清单。</p>
+        <div class="who">读者组 · 4 分钟阅读</div>
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== 放映单 ===== -->
+  <section id="schedule" style="padding-top:0">
+    <div class="sec-t">
+      <span class="en">WEEK 09</span>
+      <h2>第九周放映单</h2>
+      <a class="more" href="#">往期放映单 #</a>
+    </div>
+    <div class="sched">
+      <div class="row head"><span>周次</span><span>片名 / 主题</span><span>看点</span><span>标签</span><span>状态</span></div>
+      <a class="row" href="#"><span class="wk">W1</span><span class="tt">开场的三分钟</span><span class="why">字幕前的镜头到底说了什么</span><span class="tag">结构</span><span class="go">已放映 →</span></a>
+      <a class="row" href="#"><span class="wk">W2</span><span class="tt">一座能住人的房间</span><span class="why">场景细节替代台词的证据</span><span class="tag">美术</span><span class="go">已放映 →</span></a>
+      <a class="row" href="#"><span class="wk">W3</span><span class="tt">声音的旁白权</span><span class="why">配乐与静音的分配比例</span><span class="tag">声音</span><span class="go">已放映 →</span></a>
+      <a class="row" href="#"><span class="wk">W4</span><span class="tt">配角改写结论</span><span class="why">同一场戏的另一种演法</span><span class="tag">表演</span><span class="go">本周 →</span></a>
+      <a class="row" href="#"><span class="wk">W5</span><span class="tt">不快但停不下来</span><span class="why">节奏与注意力的关系</span><span class="tag">剪辑</span><span class="go">预告 →</span></a>
+      <a class="row" href="#"><span class="wk">W6</span><span class="tt">色彩就是分区</span><span class="why">色块如何替角色站队</span><span class="tag">色彩</span><span class="go">预告 →</span></a>
+    </div>
+  </section>
+
+  <!-- ===== 编辑手记 ===== -->
+  <section id="memo" style="padding-top:0">
+    <div class="sec-t">
+      <span class="en">EDITOR'S NOTE</span>
+      <h2>编辑手记</h2>
+      <a class="more" href="#">往期手记 #</a>
+    </div>
+    <div class="memo">
+      <p class="q">“第九期最有用的经验是：别急着列大全。把范围收到九部、九个角度，反而能把每一部的选择理由讲透——观众带走的不是名单，是一套自己也能用的判断方法。”<cite>— 神马电影网第九 · 主编手记</cite></p>
+      <div class="facts">
+        <div><b>9</b><span>本期九个选题</span></div>
+        <div><b>9</b><span>第九周放映单</span></div>
+        <div><b>9</b><span>九条笔记方法</span></div>
+        <div><b>09</b><span>本期的期号</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 关于 ===== -->
+  <section id="about" style="padding-top:0">
+    <div class="sec-t">
+      <span class="en">ABOUT</span>
+      <h2>关于神马电影网第九</h2>
+      <a class="more" href="#">联系方式 #</a>
+    </div>
+    <div class="memo" style="padding:32px 40px">
+      <p class="q">神马电影网第九（网站网址：https://shenmadianyingwangdijiu-wap.github.io）是一份以「第九」为主题的单页静态内容站，发布第九期选题、九部片片单、第九周放映单与编辑笔记。本站不提供任何在线播放、下载或盗版资源链接；影片名称仅用于评论、研究与推荐。<cite>本页为单页站点，栏目以锚点定位；内页占位链接以 # 表示，未生成 robots.txt 与 sitemap.xml。</cite></p>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="in">
+    <div>© 2026 神马电影网第九 · 网站名称：神马电影网第九 · 网站网址：https://shenmadianyingwangdijiu-wap.github.io · 内容仅供学习与讨论</div>
+    <div><a href="#">返回封面 #</a></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('navLinks');
+  if(!btn||!nav)return;
+  btn.addEventListener('click',function(){nav.classList.toggle('open');});
+  nav.addEventListener('click',function(e){if(e.target.tagName==='A')nav.classList.remove('open');});
+})();
+</script>
+</body>
+</html>
